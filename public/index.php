@@ -2,9 +2,9 @@
 
     require_once "../vendor/autoload.php";
 
-    $route = new \MF\Routes\Route;
+    $routes = require_once "../routes/web.php";
 
-    require_once "../routes/web.php";
+    $route = new \MF\Routes\Route($routes);
 
 	echo "it works";
 ?>

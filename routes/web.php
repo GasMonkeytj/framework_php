@@ -1,13 +1,13 @@
 <?php
-
-$route->addRoute([
-    'route'         => '/home',
-    'controller'    => 'HomeController',
-    'action'        => 'index'
-]);
-
-$route->addRoute([
-    'route'         => '/about',
-    'controller'    => 'AboutController',
-    'action'        => 'index'
-]);
+return [
+    [
+        'route'         => '/home',
+        'controller'    => 'HomeController',
+        'action'        => 'index'
+    ],
+    [
+        'route'         => '/about',
+        'controller'    => 'AboutController',
+        'action'        => 'index'
+    ]
+];
