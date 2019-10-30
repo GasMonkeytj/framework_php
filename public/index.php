@@ -1,10 +1,12 @@
 <?php
 
     require_once "../vendor/autoload.php";
+    require_once "../vendor/MF/Helpers/view.php";
 
-    $routes = require_once "../routes/web.php";
+    $route = new \MF\Routes\Route;
 
-    $route = new \MF\Routes\Route($routes);
+    require_once "../routes/web.php";
 
-	echo "it works";
+    $route->initRoutes();
+
 ?>

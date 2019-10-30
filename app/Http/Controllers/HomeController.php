@@ -6,6 +6,6 @@ class HomeController
 {
     public function index()
     {
-        return "teste";
+        view('home.index', ['teste 1', 'teste 2', 'teste 3']);
     }
 }
