@@ -6,6 +6,6 @@ class HomeController
 {
     public function index()
     {
-        view('home.index', ['teste 1', 'teste 2', 'teste 3']);
+        view('home.index', ['data' => ['teste 1', 'teste 2', 'teste 3']]);
     }
 }

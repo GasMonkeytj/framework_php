@@ -1,0 +1,6 @@
+<h1>Index</h1>
+<hr>
+
+<?php $__currentLoopData = $data; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php echo static::e($item); ?><br>
+<?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>

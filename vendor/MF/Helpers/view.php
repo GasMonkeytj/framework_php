@@ -1,7 +1,12 @@
 <?php
 
-function view($view, $data = null) {
-    $view = str_replace(".", "/", $view);
+Use eftec\bladeone\BladeOne;
 
-    require_once "../resources/views/" . $view . ".blade.php";
+function view($view, $data = null)
+{
+    $views = "../resources/views/";
+    $cache = "../storage/cache";
+    $blade = new BladeOne($views, $cache, BladeOne::MODE_AUTO);
+
+    echo $blade->run($view, $data);
 }

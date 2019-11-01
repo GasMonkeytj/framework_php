@@ -1,7 +1,8 @@
 {
   "name": "mframework",
   "require": {
-    "php": ">= 7.0"
+    "php": ">= 7.0",
+    "eftec/bladeone": "^3.31"
   },
   "authors": [
     {
