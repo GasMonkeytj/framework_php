@@ -8,5 +8,4 @@
     require_once "../routes/web.php";
 
     $route->initRoutes();
-
 ?>

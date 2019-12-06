@@ -8,5 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'eftec\\bladeone\\' => array($vendorDir . '/eftec/bladeone/lib'),
     'MF\\' => array($vendorDir . '/MF'),
-    'App\\' => array($baseDir . '/App'),
+    'App\\' => array($baseDir . '/app'),
 );

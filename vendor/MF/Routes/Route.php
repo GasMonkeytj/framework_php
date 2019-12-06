@@ -41,7 +41,6 @@ class Route
 
                 try {
                     $controller = new $class;
-
                     $action = $route['action'];
 
                     return $controller->$action();
