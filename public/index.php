@@ -5,9 +5,10 @@
     require_once "../vendor/autoload.php";
     require_once "../vendor/MF/Helpers/view.php";
 
+    $dotenv = Dotenv\Dotenv::createImmutable(__ROOT__);
+    $dotenv->load();
+
     $route = new \MF\Routes\Route;
-    $database = new \MF\Database\Connection;
-    $database->connectDatabase();
 
     require_once "../routes/web.php";
 
